@@ -9,6 +9,16 @@ body {
    
 }
 
+h1{
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+span {
+    color: green;
+}
+
 .flex{
     display: flex;
     align-items: center;
@@ -30,9 +40,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    
+    flex-direction: column; 
+    z-index: 2;
+    background-image:linear-gradient(180deg, rgba(0, 183, 255), rgba(255, 48, 255)) ;
 }
+
 
 input, textarea {
     width: 100%;
@@ -47,6 +59,7 @@ button {
     border: none;
     border-radius: 5px; 
     cursor: pointer;
+    border-radius: 10px;
     transition: all .5 ease-in;
 }
 
@@ -68,6 +81,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 15px;
 }
 
 .light-mode {
